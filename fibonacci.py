@@ -4,21 +4,13 @@ Spyderエディタ
 
 これは一時的なスクリプトファイルです
 """
-def fib(n):
-    a,b=0,1
-    for i in range(n):
-        a,b=b,a+b
-    return b
+points = {"国語" : 70, "算数" : 35, "英語" : 52}
+sum = 0
+# この下で、辞書の値の合計をループで計算してみよう
+for i in points:
+    sum=sum+points[i]
+print(int(sum))
 
-fib(10)
-
-print("n=2018のとき" + "f(n)=" + str(fib(2018)) + "である。")
-
-m=int(input())
-l=0
-while fib(l)<=m:
-    l+=1
-print(str(m)+"以下で最大のフィボナッチ数は、" + str(fib(l-1))+ "です。")
     
 
     
